@@ -1,6 +1,7 @@
 library(cellrangerRkit)
 library(slam)
 
+#Load QCed data
 ts13_1=read.table(file='/data1/ajay/10x/TS13_run1/run1/filtered_2/Matrix_UMI_Gene_Filtered_Clean.tsv',sep='\t',header=T,check.names = F)
 ts13_1_filt<-ts13_1
 #ts13_1_filt<-ts13_1[rowSums(ts13_1[,2:ncol(ts13_1)])>100,] # Remove genes with less than 100 UMI across all cells
